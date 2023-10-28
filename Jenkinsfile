@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('clone-code') {
             steps {
-                git branch: 'main', url: 'https://github.com/raghavendrawls/tweet-trend-new.git'
+                sh 'maven clean deploy'
             }
         }
     }
