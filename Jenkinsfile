@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('clone-code') {
             steps {
-                sh 'maven clean deploy'
+                sh 'mvn clean deploy'
             }
         }
     }
